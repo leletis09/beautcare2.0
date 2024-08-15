@@ -1,0 +1,252 @@
+/*  . = classe
+    # = id
+    tag = div  */
+    /* root= raiz do Html(ele todo) */
+    :root{
+        --main-color: #ec9fab;
+        --nav-color: #ba2c3e;
+        --bg-color: #f3d6de;
+        --black: #cc8998;
+        --black02: #000000;
+        --border: 0.1rem solid var(--card-color);
+        --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    /* todo o site */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        transition: all 0.5s ease-in;
+        scroll-behavior: smooth;
+        scroll-padding-top: 16vh;
+    }
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    body {
+        background-color: var(--bg-color);
+    }
+    section{
+        padding: 2rem 7%;
+    }
+    .btn{
+        display: inline-block;
+        background-color: var(--nav-color);
+        color: #fff;
+        font-size: 1.7rem;
+        padding: 0.8rem 2.5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    .btn:hover{
+        letter-spacing: 0.2rem;
+    }
+    .title{
+        /* text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), 
+         -2px 2px 0 var(--card-color),  2px -2px 0 var(--card-color); */
+        text-align: center;
+        color: var(--nav-color);
+        text-transform: uppercase;
+        padding: 3.5rem 0;
+        font-size: 4rem;
+    }
+    .title span{
+        color: var(--main-color);
+    }
+    /* cabeçalho */
+    .header {
+        background-color: var(--nav-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 7%;
+         position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 15vh;
+        z-index: 1000;
+    }
+    .header .logo img {
+        height: 9.8rem;
+        border-radius: 50%;
+    }
+    .header .navbar a {
+        color: #fff;
+        font-size: 1.8rem;
+        margin: 0 1rem;
+    }
+    .header .navbar a:hover{
+        color: var(--main-color);
+        border-top: 0.2rem solid var(--main-color);
+        border-bottom: 0.2rem solid var(--main-color);
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+    .header .icons {
+        display: flex;
+    }
+    .header .icons div{
+        color: #fff;
+        cursor: pointer;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+    .header .icons div:hover {
+        color: var(--black);
+    }
+    .header .icons .menu-icon{
+        display: none;
+    }
+    /* caixa de pesquisa(search box) */
+    .header .search-form {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 115%;
+        right: -100%;
+        width: 45rem;
+        height: 4.5rem;
+        background-color: #fff;
+    }
+    .header .search-form.active {
+        right: 7%;
+    }
+    .header .search-form input {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        font-size: 1.3rem;
+        color:var(--black);
+        text-transform: none;
+    }
+    .header .search-form label {
+        color: var(--nav-color);
+        font-size: 2rem;
+        padding-right: 1.3rem;
+        cursor: pointer;
+    }
+    .header .search-form label:hover {
+        color: var(--black02);
+    }    
+    /*home section starts*/
+    .home {
+        display: flex;
+        align-items: center;
+         min-height: 84vh;
+        margin-top: 0vh;
+        background-color: var(--main-color);
+        background-image: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .home .hero{
+        width: 60rem;
+        margin-left: 5rem;
+    }
+    .home .hero h3{
+        font-size: 6rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .home .hero p{
+        font-size: 2rem;
+        font-weight: lighter;
+        line-height: 2.5rem;
+        padding: 1rem 0;
+        color: #fff;
+    }
+      /* about us section */
+    .aboutus{
+        display: flex;
+        margin-top: 15rem;
+        margin-left: 20rem;
+    }
+    .left-column .right-column{
+        flex-basis: 50%;
+    }
+    .right-column img{
+        margin-left: 120px;
+    }
+/* separa a imagem da margem */
+.about-img{
+    margin-left: 95px;
+    margin-right: 7rem;
+    margin-top: 7.5rem;
+    margin-bottom: 15rem;
+    width: 70rem;
+    height: 40rem;
+    border: 4px transparent;
+    border-radius: 30px;
+}
+.aboutus h1{
+    font-size: 90px;
+    align-items: center;
+    justify-items: center;
+}
+.left-column h3{
+    font-size: 3rem;
+}
+.left-column p{
+    margin-top: 3rem;
+    font-size: 16px;
+    color: var(--letters);
+}
+    footer{
+        background-color: var(--nav-color);
+        text-align: center;
+    }
+    .footer .social-media{
+        padding: 1rem 0;
+    }
+    .footer .social-media a{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        line-height: 5rem;
+        font-size: 2rem;
+        color: #fff;
+
+        border: var(--border);
+        margin: 0.5rem;
+    }
+    .footer .social-media a:hover{
+        background-color: var(--main-color);
+    }
+    .footer .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .footer .links a{
+        padding: 7px 30px;
+        color: #fff;
+        border: var(--border);
+        font-size: 2rem;
+    }
+    .footer .links a:hover{
+        border: 20rem;
+        border-radius: 20px;
+        background-color: var(--main-color);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .footer .credits{
+        font-size: 2rem;
+        color: var(--bg-color);
+        font-weight: lighter;
+        padding: 1.5rem;
+    }
+    .footer .credits span{
+        color: var(--bg-color);
+    }

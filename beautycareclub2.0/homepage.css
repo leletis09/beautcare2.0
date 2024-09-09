@@ -3,11 +3,12 @@
     tag = div  */
     /* root= raiz do Html(ele todo) */
     :root{
-        --main-color: #ec9fab;
+        --main-color: #ffe5e8;
         --nav-color: #ba2c3e;
         --bg-color: #f3d6de;
         --black: #cc8998;
         --black02: #000000;
+        --white: #fff;
         --border: 0.1rem solid var(--card-color);
         --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
@@ -38,15 +39,20 @@
     }
     .btn{
         display: inline-block;
-        background-color: var(--nav-color);
-        color: #fff;
         font-size: 1.7rem;
         padding: 0.8rem 2.5rem;
         margin-top: 1rem;
+        margin-right: 15px;
+        outline: none;
+        border: 1px solid var(--nav-color);
+        border-radius: 20px;
         cursor: pointer;
+        color: var(--nav-color);
+        background: transparent;
     }
     .btn:hover{
-        letter-spacing: 0.2rem;
+        background-color: #ba2c3e;
+        color: #fff;
     }
     .title{
         /* text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), 
@@ -62,45 +68,65 @@
     }
     /* cabeçalho */
     .header {
-        background-color: var(--nav-color);
+        background:transparent;
+        /* background-color: var(--nav-color); */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem 7%;
-         position: fixed;
+        justify-content: space-evenly;
+        /* align-items: flex-start; */
+        /* padding: 1.5rem 7%; */
+         /* position: relative; */
         top: 0;
         left: 0;
         right: 0;
         height: 15vh;
         z-index: 1000;
     }
-    .header .logo img {
-        height: 9.8rem;
-        border-radius: 50%;
+    .texto1{
+        margin-top: -200px;
+        margin-left: -5px;
     }
+    .texto{
+        margin-top: -5x;
+        margin-left: -5px;
+    }
+    .header .logo img {
+        padding: 1px;
+        margin-left: -30px;
+        margin-top: -18px;
+        margin-bottom: 10rem;
+        height: 12rem;
+
+    }
+nav{
+    margin-top: 25px;
+    margin-left: 570px;
+}
     .header .navbar a {
-        color: #fff;
+        justify-content: flex-end;
+        color: var(--nav-color);
         font-size: 1.8rem;
-        margin: 0 1rem;
+        margin: 10px 30px 0 0;
     }
     .header .navbar a:hover{
-        color: var(--main-color);
-        border-top: 0.2rem solid var(--main-color);
-        border-bottom: 0.2rem solid var(--main-color);
+        color: #fff;
+        border-top: 0.2rem solid var(--white);
+        border-bottom: 0.2rem solid var(--white);
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
     }
     .header .icons {
         display: flex;
+        margin-top: 20px;
+        margin-left: -15px;
     }
     .header .icons div{
-        color: #fff;
+        color: var(--nav-color);
         cursor: pointer;
         font-size: 2.5rem;
         margin-left: 2rem;
     }
     .header .icons div:hover {
-        color: var(--black);
+        color: #fff;
     }
     .header .icons .menu-icon{
         display: none;
@@ -140,67 +166,177 @@
     .home {
         display: flex;
         align-items: center;
-         min-height: 84vh;
-        margin-top: 0vh;
-        background-color: var(--main-color);
-        background-image: url(img/background.jpg);
+        min-height: 100vh;
+        margin-top: -10vh;
+        margin-bottom: -7.3vh;
+        background-color: var(--bg-color);
+        background-image: url(img/imagembemvindo.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
     }
     .home .hero{
         width: 60rem;
-        margin-left: 5rem;
+        margin-left: -2rem;
     }
     .home .hero h3{
+        cursor: default;
         font-size: 6rem;
         text-transform: uppercase;
-        color: #fff;
+        color: var(--nav-color);
+        font-weight: bolder;
+    
     }
     .home .hero p{
+        cursor: default;
         font-size: 2rem;
-        font-weight: lighter;
+        /* font-weight: bolder; */
         line-height: 2.5rem;
         padding: 1rem 0;
-        color: #fff;
+        color: #ba2c3e;
     }
-      /* about us section */
-    .aboutus{
+    /* Categorias */
+    /* .top-categories {
+        background-color: var(--main-color);
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .top-categories .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .top-categories .container h2{
+        color: var(--nav-color);
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+    .category-grid {
+        /* position: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; 
         display: flex;
-        margin-top: 15rem;
-        margin-left: 20rem;
+        grid-template-columns: repeat(4, 1fr); /* Ajuste conforme necessário 
+        gap: 20px; /* Ajuste o espaçamento entre os itens 
     }
-    .left-column .right-column{
-        flex-basis: 50%;
+    .category-item {
+        height: 10rem;
+        width: 10rem; /* Defina a largura para garantir que o contêiner seja quadrado 
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 45px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center; /* Alinha o conteúdo ao centro verticalmente 
+        justify-content: center; /* Alinha o conteúdo ao centro horizontalmente 
+        text-align: center; /* Centraliza o texto
+    } */
+    /* .categoria {
+        padding: 2rem;
+        background-color: var(--black); /* Ajuste a cor de fundo conforme necessário 
+    } */
+    /* .cont h2{
+        position: center;
+        color: var(--nav-color);
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    } */
+    /* .cont {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas iguais 
+        gap: 20px; /* Espaço entre as imagens 
+        max-height: 47rem;
+        max-width: 37rem; /* Define um tamanho máximo para o contêiner 
+        margin: 0 auto; /* Centraliza o contêiner horizontalmente 
+    } */
+    /* .cat_img {
+        /*background-color: #fff; Cor de fundo para destacar as imagens 
+        border-radius: 100%; /* Borda arredondada para um visual mais suave 
+        overflow: hidden; /* Garante que as imagens não ultrapassem os limites do contêiner 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra 
+        text-align: center; /* Centraliza o texto e a imagem 
     }
-    .right-column img{
-        margin-left: 120px;
+    
+    .cat_img img {
+        height: 100%;
+        width: 100%; /* Faz com que a imagem preencha a largura do contêiner 
+        height: auto; /* Mantém a proporção da imagem 
     }
-/* separa a imagem da margem */
-.about-img{
-    margin-left: 95px;
-    margin-right: 7rem;
-    margin-top: 7.5rem;
-    margin-bottom: 15rem;
-    width: 70rem;
-    height: 40rem;
-    border: 4px transparent;
-    border-radius: 30px;
-}
-.aboutus h1{
-    font-size: 90px;
-    align-items: center;
-    justify-items: center;
-}
-.left-column h3{
-    font-size: 3rem;
-}
-.left-column p{
-    margin-top: 3rem;
-    font-size: 16px;
-    color: var(--letters);
-}
+    
+    /* .cat_img h3 {
+        margin: 1rem 0;  Espaçamento acima e abaixo do título 
+        font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário 
+        color: #333; /* Cor do texto 
+    } */ 
+    /* .category-item img{
+        margin: 0;
+        height: 8rem;
+        background-color: #fff;
+        border-radius: 100%;
+        margin-top: 12px;
+       
+    }
+    .category-item img {
+        height: 100%; /* Ajuste a altura para preencher o contêiner 
+        width: auto; /* Ajuste a largura para manter a proporção 
+        border-radius: 50%; /* Manter o formato circular 
+        margin-top: 0;  Remova ou ajuste a margem 
+    }
+   .category-grid .category-item h3{
+    font-size: 1rem;
+    margin-top: 22px;
+   } */
+    .categorias{
+        margin-top: 4.5rem;
+        
+    }
+.catgtitulo h1{
+    /* display: flex;  */
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--nav-color);
+    padding: 2rem;
+    margin-top: 1rem; 
+   }
+   .tipo1, .tipo2, .tipo3, .tipo4{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    height: 2rem;
+   }
+   .tipo1, .tipo2, .tipo3, .tipo4, h2{
+    
+    
+    margin-top: 0.8rem;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-family: "lato", sans-serif;
+    
+   }
+   
+   .catgimg{
+    display: flex;
+    justify-content: flex-start;
+    width: 6rem;
+    height: 3rem;
+    margin-left: 600px;
+   }
+   .catgimg img{
+    background-color: #fff;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 4.5rem;
+   }
     footer{
+        margin-top: 14rem;
         background-color: var(--nav-color);
         text-align: center;
     }
@@ -214,7 +350,6 @@
         line-height: 5rem;
         font-size: 2rem;
         color: #fff;
-
         border: var(--border);
         margin: 0.5rem;
     }
@@ -242,9 +377,9 @@
         transition: all 0.5s ease-in-out;
     }
     .footer .credits{
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: var(--bg-color);
-        font-weight: lighter;
+        font-weight: normal;
         padding: 1.5rem;
     }
     .footer .credits span{

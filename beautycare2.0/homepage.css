@@ -20,7 +20,7 @@
         border: none;
         outline: none;
         text-decoration: none;
-        text-transform: capitalize;
+        text-transform: none;
         font-family: "Lato", sans-serif;
         font-style: normal;
         transition: all 0.5s ease-in;
@@ -82,7 +82,7 @@
         z-index: 1000;
     }
     .texto1{
-        margin-top: -200px;
+        margin-top: -10rem;
         margin-left: -5px;
     }
     .texto{
@@ -136,7 +136,7 @@ nav{
         display: flex;
         align-items: center;
         position: absolute;
-        top: 115%;
+        top: 15%;
         right: -100%;
         width: 45rem;
         height: 4.5rem;
@@ -166,8 +166,8 @@ nav{
     .home {
         display: flex;
         align-items: center;
-        min-height: 100vh;
-        margin-top: 1vh;
+        min-height: 95vh;
+        margin-top: -10vh;
         margin-bottom: -7.3vh;
         background-color: var(--bg-color);
         background-image: url(img/imagembemvindo.png);
@@ -180,6 +180,7 @@ nav{
         margin-left: -2rem;
     }
     .home .hero h3{
+        cursor: default;
         font-size: 6rem;
         text-transform: uppercase;
         color: var(--nav-color);
@@ -187,51 +188,94 @@ nav{
     
     }
     .home .hero p{
+        cursor: default;
         font-size: 2rem;
         /* font-weight: bolder; */
         line-height: 2.5rem;
         padding: 1rem 0;
         color: #ba2c3e;
     }
-    /* Categorias */
-    .top-categories {
-        background-color: var(--main-color);
-        padding: 50px 0;
-        text-align: center;
-    }
 
-    .top-categories .container {
-        max-width: 1200px;
-        margin: 0 auto;
+    .categorias{
+        margin-top: 4.5rem;
+        
     }
-    .top-categories .container h2{
-        color: var(--nav-color);
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
-    }
-    .category-grid {
-        position: center;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-    .category-item {
-        height: 1rem;
-        border-radius: 50%;
-        background-color: #fff;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .category-item img{
-        height: 8rem;
-        border-radius: 50%;
-        margin-top: -45px;
-       
-    }
+.catgtitulo h1{
+     display: flex; 
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--nav-color);
+    padding: 2rem;
+    margin-top: 1rem; 
+   }
+   .tipo1, .tipo2, .tipo3, .tipo4{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    height: 2rem;
+   }
+   .tipo1, .tipo2, .tipo3, .tipo4, h2{
+    margin-top: 0.8rem;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-family: "lato", sans-serif;
+    
+   }
    
+   .catgimg{
+    display: flex;
+    justify-content: flex-start;
+    width: 6rem;
+    height: 3rem;
+    margin-left: 600px;
+   }
+   .catgimg img{
+    background-color: #fff;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 6.5rem;
+    margin-left: -100rem;
+   } */
+   
+.aboutus{
+    display: grid;
+    justify-content:center;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 10rem;
+}
+.aboutus .right .left{
+    padding: 20rem;
+}
+.aboutus .right img{
+    margin-top: 10rem;
+    margin-right: 5rem;
+   margin-left: 5rem; 
+   height: 52rem;
+   width: 35rem;
+}
+.aboutus .left h1{
+    text-transform: none;
+    cursor: default;
+    font-weight: bold;
+    color: var(--nav-color);
+    font-size: 3.3rem;
+    margin-bottom: 3rem;
+}
+.aboutus .left p{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+.aboutus .left img{
+    margin-top: 3rem;
+    height: 12rem;
+    width: 10rem;
+}
     footer{
+        margin-top: 14rem;
         background-color: var(--nav-color);
         text-align: center;
     }
@@ -245,7 +289,6 @@ nav{
         line-height: 5rem;
         font-size: 2rem;
         color: #fff;
-
         border: var(--border);
         margin: 0.5rem;
     }
@@ -281,3 +324,4 @@ nav{
     .footer .credits span{
         color: var(--bg-color);
     }
+    

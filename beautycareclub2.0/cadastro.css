@@ -1,0 +1,212 @@
+@import url('https://fonts.google.com/share?selection.family=Noto+Sans:ital,wght@0,100..900;1,100..900');
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+.main-cadastro{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8d2ddd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-cadastro > h1{
+    color: #c45160;
+    font-size: 3vw;
+}
+
+.left-cadastro-image{
+    width: 30vw;
+    margin-right: 10rem;
+}
+.rigth-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #f0bac9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #d34d5f;
+}
+
+.card-cadastro > h1{
+    color: #c45160;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: flex-start;
+    padding: 15px;
+    background: #be737d;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #d4969e;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color: #ffffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #ebebeb;
+
+}
+
+.btn-cadastro{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #24202c;
+    background: #c45160;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p{
+    color: #c45160;
+}
+
+#go-to-login{
+    color: #ffff;
+}
+
+@media only screen and (max-width: 950px){
+    .card-cadastro{
+        width: 45%;
+    } 
+}
+
+@media only screen and (max-width: 600px){
+    .main-cadastro{
+        flex-direction: column;
+    } 
+    .left-cadastro > h1{
+    display: none;
+    }
+    .left-cadastro{
+        width: 100%;
+        height: auto;
+    }
+    .rigth-cadastro{
+        width: 100%;
+        height: auto;
+    }
+    .left-cadastro-image{
+        width: 30vh;
+    }
+    .card-cadastro{
+        width: 90%;
+    }
+}
+
+
+
+/* 
+#app {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#register-screen {
+    text-align: center;
+}
+
+#main-screen {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+} */

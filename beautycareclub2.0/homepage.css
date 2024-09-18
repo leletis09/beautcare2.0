@@ -6,7 +6,7 @@
         --main-color: #ffe5e8;
         --nav-color: #ba2c3e;
         --bg-color: #f3d6de;
-        --black: #cc8998;
+        --bg-color02: #f8d2ddd5;
         --black02: #000000;
         --white: #fff;
         --border: 0.1rem solid var(--card-color);
@@ -20,7 +20,7 @@
         border: none;
         outline: none;
         text-decoration: none;
-        text-transform: capitalize;
+        text-transform: none;
         font-family: "Lato", sans-serif;
         font-style: normal;
         transition: all 0.5s ease-in;
@@ -82,7 +82,7 @@
         z-index: 1000;
     }
     .texto1{
-        margin-top: -200px;
+        margin-top: -10rem;
         margin-left: -5px;
     }
     .texto{
@@ -136,7 +136,7 @@ nav{
         display: flex;
         align-items: center;
         position: absolute;
-        top: 115%;
+        top: 15%;
         right: -100%;
         width: 45rem;
         height: 4.5rem;
@@ -166,10 +166,10 @@ nav{
     .home {
         display: flex;
         align-items: center;
-        min-height: 100vh;
+        min-height: 95vh;
         margin-top: -10vh;
         margin-bottom: -7.3vh;
-        background-color: var(--bg-color);
+        background-color: var(--bg-color02);
         background-image: url(img/imagembemvindo.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -195,108 +195,14 @@ nav{
         padding: 1rem 0;
         color: #ba2c3e;
     }
-    /* Categorias */
-    /* .top-categories {
-        background-color: var(--main-color);
-        padding: 50px 0;
-        text-align: center;
-    }
 
-    .top-categories .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .top-categories .container h2{
-        color: var(--nav-color);
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
-    }
-    .category-grid {
-        /* position: center;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px; 
-        display: flex;
-        grid-template-columns: repeat(4, 1fr); /* Ajuste conforme necessário 
-        gap: 20px; /* Ajuste o espaçamento entre os itens 
-    }
-    .category-item {
-        height: 10rem;
-        width: 10rem; /* Defina a largura para garantir que o contêiner seja quadrado 
-        border-radius: 50%;
-        background-color: #fff;
-        padding: 45px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center; /* Alinha o conteúdo ao centro verticalmente 
-        justify-content: center; /* Alinha o conteúdo ao centro horizontalmente 
-        text-align: center; /* Centraliza o texto
-    } */
-    /* .categoria {
-        padding: 2rem;
-        background-color: var(--black); /* Ajuste a cor de fundo conforme necessário 
-    } */
-    /* .cont h2{
-        position: center;
-        color: var(--nav-color);
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
-    } */
-    /* .cont {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas iguais 
-        gap: 20px; /* Espaço entre as imagens 
-        max-height: 47rem;
-        max-width: 37rem; /* Define um tamanho máximo para o contêiner 
-        margin: 0 auto; /* Centraliza o contêiner horizontalmente 
-    } */
-    /* .cat_img {
-        /*background-color: #fff; Cor de fundo para destacar as imagens 
-        border-radius: 100%; /* Borda arredondada para um visual mais suave 
-        overflow: hidden; /* Garante que as imagens não ultrapassem os limites do contêiner 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra 
-        text-align: center; /* Centraliza o texto e a imagem 
-    }
-    
-    .cat_img img {
-        height: 100%;
-        width: 100%; /* Faz com que a imagem preencha a largura do contêiner 
-        height: auto; /* Mantém a proporção da imagem 
-    }
-    
-    /* .cat_img h3 {
-        margin: 1rem 0;  Espaçamento acima e abaixo do título 
-        font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário 
-        color: #333; /* Cor do texto 
-    } */ 
-    /* .category-item img{
-        margin: 0;
-        height: 8rem;
-        background-color: #fff;
-        border-radius: 100%;
-        margin-top: 12px;
-       
-    }
-    .category-item img {
-        height: 100%; /* Ajuste a altura para preencher o contêiner 
-        width: auto; /* Ajuste a largura para manter a proporção 
-        border-radius: 50%; /* Manter o formato circular 
-        margin-top: 0;  Remova ou ajuste a margem 
-    }
-   .category-grid .category-item h3{
-    font-size: 1rem;
-    margin-top: 22px;
-   } */
     .categorias{
+        background-color: var(--bg-color);
         margin-top: 4.5rem;
         
     }
 .catgtitulo h1{
-    /* display: flex;  */
+     display: flex; 
     justify-content: center;
     text-align: center;
     font-size: 5rem;
@@ -311,8 +217,6 @@ nav{
     height: 2rem;
    }
    .tipo1, .tipo2, .tipo3, .tipo4, h2{
-    
-    
     margin-top: 0.8rem;
     text-align: center;
     color: #000000;
@@ -330,13 +234,49 @@ nav{
    }
    .catgimg img{
     background-color: #fff;
+
     border-radius: 100%;
     width: 100%;
     height: 100%;
-    padding: 4.5rem;
-   }
+    padding: 6.5rem;
+    margin-left: -100rem;
+   } 
+    
+.aboutus{
+    background-color: var(--bg-color);
+display: flex;
+justify-content: flex-end;
+}
+
+.aboutus .left img{
+    margin-top: 10rem;
+    margin-left: 15rem;
+    margin-right: -10rem;
+   height: 52rem;
+   width: 35rem;
+}
+.aboutus .right h1{
+    text-transform: none;
+    cursor: default;
+    font-weight: bold;
+    color: var(--nav-color);
+    font-size: 3.3rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.aboutus .right p{
+    text-align: justify;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+.aboutus .right img{
+    margin-right: 4.5rem;
+    margin-left: 0.4rem;
+    margin-top: 3rem;
+    height:21rem;
+    width: 19rem;
+}
     footer{
-        margin-top: 14rem;
         background-color: var(--nav-color);
         text-align: center;
     }

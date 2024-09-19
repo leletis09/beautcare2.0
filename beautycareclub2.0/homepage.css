@@ -19,9 +19,9 @@
         box-sizing: border-box;
         border: none;
         outline: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-decoration: none;
         text-transform: none;
-        font-family: "Lato", sans-serif;
         font-style: normal;
         transition: all 0.5s ease-in;
         scroll-behavior: smooth;
@@ -84,10 +84,12 @@
     .texto1{
         margin-top: -10rem;
         margin-left: -5px;
+        font-family: "Lato", sans-serif;
     }
     .texto{
         margin-top: -5x;
         margin-left: -5px;
+        font-family: "Lato", sans-serif;
     }
     .header .logo img {
         padding: 1px;
@@ -202,13 +204,15 @@ nav{
         
     }
 .catgtitulo h1{
-     display: flex; 
+    display: flex; 
     justify-content: center;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4.3rem;
     color: var(--nav-color);
     padding: 2rem;
-    margin-top: 1rem; 
+    margin-top: 1rem;
+    font-weight: lighter;
+    font-style: italic;
    }
    .tipo1, .tipo2, .tipo3, .tipo4{
     padding: 1rem;
@@ -256,18 +260,21 @@ justify-content: flex-end;
    width: 35rem;
 }
 .aboutus .right h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: none;
     cursor: default;
-    font-weight: bold;
+    font-weight: lighter;
     color: var(--nav-color);
     font-size: 3.3rem;
+    font-style: italic;
     margin-top: 10rem;
     margin-bottom: 3rem;
 }
 .aboutus .right p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     margin-top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .aboutus .right img{
     margin-right: 4.5rem;
